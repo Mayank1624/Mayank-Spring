@@ -20,13 +20,46 @@
     <property name="name" value="Atif"/>
     <property name="gender" value="Male"/>
     <property name="address" ref="add1" />
+    <property name="List">
+    <list>
+    <value>3456</value>
+     <value>356</value>
+      <value>456</value>
+       <value>null</value>
+        <value>36</value>
+         <value>3</value>
+          <value>3456</value>
+          <value>hello</value>
+    </list>
+    </property>
+    
+    
+    <property name="Set">
+    <set>
+    <value>1233</value>
+     <value>123</value>
+      <value>123</value>
+       <value>1233</value>
+        <value>13</value>
+         <value>12</value>
+    </set>
+    </property>
+    
+    <property name="Map">
+    <map>
+    <entry key="1" value="one" /> <entry key="1" value="one" />
+     <entry key="2" value="two" />
+      <entry key="3" value="three" />
+       <entry key="4" value="four" />
+        <entry key="2" value="TWO" />
+    </map>
+    </property>
      
     </bean>
     
     
     
-    
-     <bean name="add2" class="seekho.spring.model.Address">
+         <bean name="add2" class="seekho.spring.model.Address">
      
      <constructor-arg name="city" value="Khaga" />
      <constructor-arg name="state" value="up" />
@@ -40,6 +73,40 @@
      <constructor-arg name="name" value="Mayank" />
      <constructor-arg name="gender" value="Male" />
      <constructor-arg name="address" ref="add2" />
+     
+     <constructor-arg name="List">
+         <list>
+    <value>1234</value>
+     <value>234</value>
+      <value>12</value>
+       <value>null</value>
+        <value>34</value>
+         <value>3</value>
+          <value>34</value>
+          <value>hello</value>
+    </list>
+     </constructor-arg>
+     
+     <constructor-arg name="Set">
+        <set>
+    <value>1233</value>
+     <value>123</value>
+      <value>123</value>
+       <value>1233</value>
+        <value>13</value>
+         <value>12</value>
+    </set>
+     </constructor-arg>
+     
+     <constructor-arg name="Map">
+      <map>
+    <entry key="1" value="one" /> <entry key="1" value="one" />
+     <entry key="2" value="two" />
+      <entry key="3" value="three" />
+       <entry key="4" value="four" />
+        <entry key="2" value="TWO" />
+    </map>
+     </constructor-arg>
      
      </bean>
     
