@@ -54,11 +54,11 @@ public class Employee {
 	}
 
 
-	@Override
-	public String toString() {
-		return "Employee [id=" + id + ", name=" + name + ", gender=" + gender + "]";
-	}
-	
+//	@Override
+//	public String toString() {
+//		return "Employee [id=" + id + ", name=" + name + ", gender=" + gender + "]";
+//	}
+//	
 	
 	
 

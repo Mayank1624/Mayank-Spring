@@ -6,7 +6,9 @@
 
     <!-- bean definitions here -->
     
-    <bean name="emp1" class="seekho.spring.model.Employee">
+  <!--  Scope->scope 2 type ke hote hai. 1->Singleton-same object return karega. 2->Prototype-har bar object alag  aayega-->
+    
+    <bean name="emp1" class="seekho.spring.model.Employee" scope="singleton">
      
     <property name="id" value="1624"/>
     <property name="name" value="Atif"/>
@@ -15,12 +17,7 @@
     </bean>
     
     
-     <bean name="emp2" class="seekho.spring.model.Employee">
-     <constructor-arg name="id" value="2416" />
-     <constructor-arg name="name" value="Mayank" />
-     <constructor-arg name="gender" value="Male" />
-     
-     </bean>
+
     
     
 
