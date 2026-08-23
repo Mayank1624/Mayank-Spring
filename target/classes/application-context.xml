@@ -5,7 +5,12 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- bean definitions here -->
-     <bean name="add1" class="seekho.spring.model.Address">
+    
+<!--    Autowiring->eska use alag se ref ya inner been na bnana bnana pade esliye hota hai autowiring karte time bean ka nam aur reference variabe ka
+     name same hona chahiye esse direct dependencies injection ho jata hai  jabautowire byName ho Agar autowire bytag hai to been ka nam
+      difference bhi ho sakta hai--> 
+      
+     <bean name="address1" class="seekho.spring.model.Address">
      
      <property name="city" value="ballia" />
      <property name="state" value="up" />
@@ -14,34 +19,18 @@
     
     
     
-    <bean name="emp1" class="seekho.spring.model.Employee">
+    <bean name="emp1" class="seekho.spring.model.Employee" autowire="byType">
      
     <property name="id" value="1624"/>
     <property name="name" value="Atif"/>
     <property name="gender" value="Male"/>
-    <property name="address" ref="add1" />
+   
      
     </bean>
     
     
     
     
-     <bean name="add2" class="seekho.spring.model.Address">
-     
-     <constructor-arg name="city" value="Khaga" />
-     <constructor-arg name="state" value="up" />
-     
-     </bean>
-     
-     
-    
-    <bean name="emp2" class="seekho.spring.model.Employee">
-     <constructor-arg name="id" value="2416" />
-     <constructor-arg name="name" value="Mayank" />
-     <constructor-arg name="gender" value="Male" />
-     <constructor-arg name="address" ref="add2" />
-     
-     </bean>
     
     
 
